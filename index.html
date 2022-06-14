@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    
+
+    <style type="text/css">
+        body{
+            direction: rtl;
+        }
+    </style>
+    <title>ToDoList</title>
+</head>
+<body>
+<div class="backG">
+    <header class="size container"> <!--profile & timer-->
+        <div class="display-profile"> <!--profile-->
+            <div class="size-img rounded-circle"></div>
+            <!-- <img src="./image/img1.jfif" alt="" class="fit-img"> -->
+            <p class="style-p text-light">سلام پریسا</p> <!-- show name-->
+        </div>
+        <div class="main-box" id="main-box">
+            <div class="box-item">
+                <div class="box-number" id="hours">00</div>
+                <span class="space">:</span>
+            </div>
+            <div class="box-item">
+                <div class="box-number" id="minutes">00</div>
+                <span class="space">:</span>
+            </div>
+            <div class="box-item">
+                <div class="box-number" id="seconds">00</div>
+            </div>
+            <div class="time">باقی مانده روز</div>
+        </div> <!--timer-->
+    </header>
+    <section class="container"><!--menu & add new work-->
+    <div class="d-flex display">
+        <div class="backG-menu">   <!--menu-->
+            <div class="displayP1"> <!-- part 1: search-->
+                <div class="border-list"> <!-- works list-->
+                    <p>لیست کارها</p>
+                </div>
+                <div> <!--search on menu-->
+                    <form action="" class="position-for-icon">
+                        <input type="text" placeholder="جستجو"  class="search-input">
+                        <i class="fas fa-search style-icon"></i>
+                    </form>
+                </div>
+            </div>
+            <div class="displayP2"> <!--part 2: menu-->
+                    <form class="todo-list">
+                    
+                    </form>
+            </div>
+
+
+            <div class="displayP3 d-flex justify-content-start"> <!--part 3: check box-->
+                <div class="checkbox-padding"> <!--checkbox for done work-->
+                    <form action="" class="design-form">
+                       <input type="checkbox" checked="cheched"  disabled="disabled" id="done-p3">
+                       <label for="done-p3" class="sizing-label0">‌2</label>
+                       <label for="done-p3" class="sizing-label">کار انجام شده</label>
+                    </form>
+
+                </div>
+                <div> <!--checkbox for undone work-->
+                    <form action="" class="design-form">
+                       <input type="checkbox"  disabled="disabled" id="undone-p3">
+                       <label for="undone-p3" class="sizing-label0">7</label>
+                       <label for="undone-p3" class="sizing-label">کار انجام نشده</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="backG-addwork">   <!--add new work-->
+            <div class="display-h">  <!--header new work-->
+                <p class="border-list1">افزودن کار جدید</p>
+            </div>
+            <div class="style-interWork"> <!--inter work-->
+                <form action="" class="flex-Direction">
+                    <input type="text" placeholder="چیکار می خوای بکنی؟" class="todo-input"/>
+                    <i class="fas fa-plus style-icon1"></i>
+                    <input type="submit"  value="ثبت" class="submit-style">
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
